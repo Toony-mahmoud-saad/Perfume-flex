@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f2ebe3;
+  font-family: sans-serif;
+}
+:root{
+  --hbutton-hover: #1a4031;
+  --price: #3c8067;
+  --head: black;
+  --paragraph: #8a8fa1;
+}
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 12px;
+  height: fit-content;
+}
+.flex .image{
+  background-image: url("Assets/perfume.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px 0 0 12px;
+  width: 100%;
+  height: auto;
+}
+.flex .text{
+  /* background-color: #3c8067; */
+  border-radius: 0 12px 12px 0;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex .text .logo{
+  font-size: xx-large;
+  letter-spacing: 2px;
+  color: var(--paragraph);
+}
+.flex .text .head{
+  font-size: xx-large;
+}
+.flex .text .paragraph{
+  font-size: medium;
+  color: var(--paragraph);
+}
+.flex .text .price{
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--price)
+}
+.flex .text del{
+  font-size: small;
+  margin-left: 25px;
+  color: black;
+}
+.flex .text .button{
+  display: flex;
+  background-color: var(--price);
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+.flex .text .button i{
+  font-size: larger;
+  color: white;
+  margin-right: 10px;
+}
+.flex .text .button p{
+  font-size: larger;
+  font-weight: 600;
+  color: white;
+}
+.flex .text .button:hover{
+  background-color: var(--hbutton-hover);
+  cursor: pointer;
+}
